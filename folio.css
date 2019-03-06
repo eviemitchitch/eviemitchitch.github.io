@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:300|Gothic+A1:200|Work+Sans:200|Palanquin:200|Nunito');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: normal;
+    font-size: 225%;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #5EC2C2;
+    position: relative; 
+    top: -2px;
+    /* text-shadow: 2px 2px 2px rgba(154, 94, 194, 0.5); */
+}
+
+a:active {
+    color: #000000;
+}
+
+.header {
+  padding: 0px;
+  margin-right: 10px;
+  font-size: 70%;
+  text-align: right;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 49%; /* IE10 */
+  flex: 49%;
+  max-width: 49%;
+  padding: 0 4px;
+}
+
+.spacer {
+  -ms-flex: .5%;
+  flex: .5%;
+  max-width: .5%;
+  padding: 0 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 5px;
+  height: 100px;
+  background: #f45f71;
+  font-size: 150%;
+  margin-bottom: 0;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.about {
+  -ms-flex: 49%;
+  flex: 49%;
+  max-width: 49%;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.lab {
+  /* background: #fede47; */
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.sea {
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.app {
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.resume {
+  margin-left: 40%;
+  text-align: center;
+  background: #f45f71;
+  width: 100px;
+  height: 45px;
+  padding: 13px;
+  border-radius: 30px;
+  transition: 1s;
+}
+.resume:hover {
+  background: white;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+  /* background-color: #989aaf; */
+}
+
+.container:hover .overlay {
+  opacity: .7;
+}
+
+.csoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+  /* background-color: #989aaf; */
+}
+
+.container:hover .csoverlay {
+  opacity: .9;
+}
+
+.overtext {
+  color: black;
+  opacity: 1;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.social:hover {
+  filter: drop-shadow(2px 2px #f45f71);
+}
